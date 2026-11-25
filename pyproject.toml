@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nereid-vision"
+version = "0.1.0"
+description = "Underwater marine-debris detection with YOLOv8 and TrashCan"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "AGPL-3.0-only"}
+authors = [{name = "Jônatas Eduardo"}]
+dependencies = [
+    "ultralytics==8.4.218",
+    "opencv-python>=4.8,<5",
+    "PyYAML>=6,<7",
+    "tqdm>=4.66,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+nereid = "nereid.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+

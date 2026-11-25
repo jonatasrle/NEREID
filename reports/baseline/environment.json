@@ -1,0 +1,31 @@
+{
+  "project": "NEREID",
+  "model": "yolov8n.pt",
+  "task": "detect",
+  "class_names": {
+    "0": "marine_debris"
+  },
+  "dataset_zip_sha256": "1d13856cfef63b382d4abb9d8472d272f63233835176f8dae26ecebeac8c3492",
+  "dataset_counts": {
+    "train": {
+      "images": 6065,
+      "objects": 4766,
+      "negative_images": 1944
+    },
+    "val": {
+      "images": 1147,
+      "objects": 1240,
+      "negative_images": 206
+    }
+  },
+  "software": {
+    "ultralytics": "8.4.218",
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.1+cu130",
+    "numpy": "2.4.6",
+    "pillow": "11.3.0"
+  },
+  "gpu": "Tesla T4",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "evaluation": "Divisão original; 113 vídeos compartilhados entre train/val; sem test independente."
+}

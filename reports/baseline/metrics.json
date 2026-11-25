@@ -1,0 +1,15 @@
+{
+  "model": "YOLOv8n",
+  "class": "marine_debris",
+  "epoch": 30,
+  "epochs_completed": 30,
+  "precision": 0.84004,
+  "recall": 0.7242,
+  "map50": 0.78443,
+  "map50_95": 0.54551,
+  "training_time_seconds": 2552.65,
+  "evaluation_split": "original TrashCan-Instance validation split",
+  "shared_video_ids_count": 113,
+  "independent_test_set": false,
+  "weights_sha256": "9eb3076e234e5f8c792709d251af59a6db2d8e575883ea39101588d1710e9c32"
+}
