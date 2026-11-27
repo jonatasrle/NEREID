@@ -1,4 +1,4 @@
-# NEREID
+# nereid
 
 Marine-debris detection in underwater images and video.
 
